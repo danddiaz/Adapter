@@ -1,0 +1,19 @@
+Explicación del escenario del código de ejemplo
+
+Supongamos que tenemos una aplicación que maneja agujeros redondos 
+(RoundHole) y piezas redondas (RoundPeg). Queremos reutilizar una 
+clase existente que representa piezas cuadradas (SquarePeg), pero su 
+interfaz es incompatible.
+
+Componentes:
+
+Clase RoundHole: Representa un agujero redondo con un radio específico 
+y tiene un método fits que verifica si una pieza redonda encaja en el 
+agujero.
+
+Clase RoundPeg: Representa una pieza redonda con un radio determinado.
+
+Clase SquarePeg: Representa una pieza cuadrada con un ancho específico.
+
+Clase SquarePegAdapter: Extiende RoundPeg y traduce las llamadas para 
+que SquarePeg pueda ser utilizado donde se espera un RoundPeg.
